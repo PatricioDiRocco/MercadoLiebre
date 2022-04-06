@@ -1,0 +1,277 @@
+* {
+    margin: 0px ;
+    padding: 0px ;
+    box-sizing: border-box ;
+    }
+
+body {
+    font-family: "Roboto";
+    background-color: #ebebeb;
+}
+
+.main-header{
+    background-color: #EAC926;
+    padding: 20px;
+}
+
+.main-header-top-bar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo{
+    display: inline-block;
+    width: 150px;
+    margin-left: 0px;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+}
+
+
+.barra-busqueda {  
+    display: inline;
+    font-size: 20px;
+    margin: 5px;
+    width: 100%;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.search {
+    font-size: 100%;
+    height: 100%;
+    border: 1px solid black;
+    color: gray;
+    background-color: white;
+    margin-top: 5px;
+    border-radius: 3px;
+    position: relative;
+}
+
+.copia-header{
+    font-weight: 400;
+    text-align: center;
+    height: 50%;
+    font-weight: 600;
+}
+
+.burger-menu{
+    display: block;
+    background-color: #03264C;
+    color:#ffffff;
+    text-align: center;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    margin:auto;   
+    font-size: 18px;
+}
+
+.main-header-bottom-bar{
+    display: none;
+}
+.main-header-bottom-bar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-header-bottom-bar a {
+text-decoration: none;
+color: #222222;
+display: inline-block;
+padding: 5px 0;
+font-size: 18px;
+}
+
+.banner {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.right-nav {
+    margin-right: 0;
+}
+
+.light-nav{
+    margin-left: 0;
+}
+
+
+form {
+    width: 400px;
+    display: block;
+    min-height: 400px;
+    border-radius: 8px;
+    padding:0 20px;
+    background-color: #ebebeb;
+    text-align: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin: 7% auto;
+    letter-spacing: 0.05em;   
+    font-size: 18px;
+    border: 1px solid #CCC;
+}
+
+.formulario input{
+    display: inline-block;
+    color: #252537;
+    width: 280px;
+    height: 50px;
+    padding: 0 20px;
+    background: #fff;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    margin: 7% auto;
+    letter-spacing: 0.05em; 
+}
+
+
+button {
+    display: inline-block;
+    color: #252537;
+    width: 280px;
+    height: 50px;
+    padding: 0 20px;
+    background: #fff;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    margin: 7% auto;
+    letter-spacing: 0.05em;
+}
+
+button:hover {
+    transform: translatey(3px);
+    box-shadow: none;
+    background-color: #0022AA;
+    color: #fff;
+}
+
+
+@media (min-width: 768px) {
+    .main-header-top-bar{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .copia-header {
+        max-width: 370px;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .logo{
+        width: 300px
+    }
+
+    .slogan {
+        display: inline-block;
+        text-align: center;
+
+    }
+
+    .contenedor {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .barra-busqueda {  
+        margin-left: 30px;
+        width: 70%;
+        padding: 10px;
+    }
+    
+    .search {
+        display: inline-block;
+        text-align: center;
+        align-self: center;
+        font-size: 100%;
+        height: 100%;
+        border: 1px solid black;
+        color: gray;
+        background-color: white;
+        padding: 6px;
+        margin-top: 0.5px;
+        margin-bottom: 0.5px;
+    }
+
+    .burger-menu {
+        display:none;
+    }
+
+    .main-header-bottom-bar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-header-bottom-bar ul {
+        display: flex;
+    }
+
+    .main-header-bottom-bar li {
+        margin: 0 5px;
+    }
+
+}
+
+@media (min-width:1200px){
+    .main-header-bottom-bar {
+        max-width: 1200px;
+        margin-top: 40px;
+        margin-bottom: 00px;
+    }
+
+    .logo {
+        width:250px;
+    }
+
+    .copia-header {
+        max-width: none;
+        height: 50%;
+        font-size: 24px;
+        font-weight: 600;
+        align-items: center;
+    }
+
+    .barra-busqueda {  
+        margin-left: 30px;
+        width: 70%;
+    }
+    
+    .search {
+        display: inline-block;
+        text-align: center;
+        font-size: 100%;
+        height: auto;
+        border: 1px solid black;
+        color: gray;
+        background-color: white;
+        padding: 6.5px;
+        
+    }
+
+    .main-header-bottom-bar li {
+        margin: 20px 10px;
+    }
+
+    .main-header-bottom-bar a {
+        font-size: 18px;
+    }
+
+}
